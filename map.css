@@ -1,0 +1,10 @@
+#map{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    height: 400px; 
+    width: 751px;
+    margin-top: -68px;
+}
