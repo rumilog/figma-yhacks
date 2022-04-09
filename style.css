@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.nav-container{
+    position:absolute;
+    background: #FFFFFF;
+    box-shadow: 0px 9px 12px rgba(0, 0, 0, 0.25);
+    width: 1440px;
+    height: 104px;  
+    left: 0px;
+    top: 0px;
+    align-items: center;
+}
+
+.logo-holder{
+    position:absolute;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 31px;
+    width: 367px;
+    height: 80px;
+    left: 532px;
+    top: 14px;
+    text-align: center;
+
+}
+
+.wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 72px;
+}
+
+nav ul{
+    display: flex;
+}
+nav .logo{
+    position: absolute;
+    font-family: "Impact", fantasy;
+    font-style: bold;
+    font-weight: 400;
+    font-size: 65px;
+    width: 916px;
+    height: 120px;
+    left: calc(160% - 916px/2);
+    top: 0px;
+    color: #000000;
+}
+
+.nav-items li{
+    list-style: none;
+    margin-right: 100px;
+}
+
+.header-container{
+    background:#FFFFFF url('Group\ 1.svg');
+    background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+  height: calc(100vh - 72px);
+  display: flex;
+  align-items: center;
+  
+}
