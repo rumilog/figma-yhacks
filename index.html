@@ -5,9 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <link rel="stylesheet" href="map.css">
+    
 </head>
-<body>
+<body onload="initialize(40.6976701,-74.2598654);">
     <div class="nav-container"></div>
         <div class="wrapper">
             <div class="logo-holder">
@@ -24,21 +28,26 @@
         <div class="wrapper">
             <header>
                 <div class="background-image">
+                    <div id="map"></div>
                     <img src= "Group 2.png" alt=""/>
                     <div class="photo-BG"></div>
                 </div>
             </header>
             <div class="icons">
-                <a href="#">
+                <input id="start" type="textbox" placeholder="Start">
                     <img src="Rectangle 12.png" >
-                  </a>
-                  <a href="#">
+                  <input id="end" type="textbox" placeholder="End">
                     <img src="Rectangle 13.svg">
-                  </a>
                 
             </div>
         </div>
     </div>
-    <script src="main.js"></script>
+    <button id="getDirections">Get Directions</button>
+    <span id="text"></span>
+    <script src="map.js"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCJr7DlIq7l-eoi3-zGP5u3Q1HmZZOSmNk&callback=initialize&v=weekly"
+      async
+    ></script>
 </body>
 </html>
