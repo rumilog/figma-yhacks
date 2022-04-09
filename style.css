@@ -1,7 +1,14 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 * {
     box-sizing: border-box;
 }
-
+a {
+    text-decoration: none;
+}
 body {
     font-family: "Roboto", sans-serif;
 }
@@ -26,8 +33,11 @@ body {
     height: 80px;
     left: 532px;
     top: 14px;
-    text-align: center;
+}
 
+.logo {
+    text-align: left;
+    margin-inline: -56px;
 }
 
 .wrapper{
